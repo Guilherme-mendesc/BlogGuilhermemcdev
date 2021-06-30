@@ -8,10 +8,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto d-flex align-items-center">
           <li class="nav-item">
-            <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEHv5--BCJuww/profile-displayphoto-shrink_800_800/0/1592240968773?e=1629936000&v=beta&t=T3yj0HHfTgBcIrPRbaLgX0-RPiukNFwCMQYoVldDK4E" alt="minha foto" width="50px" height="50px" class="img-fluid rounded-circle">
+            <img src="{{foto}}" alt="foto do user" width="50px" height="50px" class="img-fluid rounded-circle">
           </li>
           <li class="nav-item pl-3 ">
-            <p class="m-3 fw-bold text-white fs-16" >Nome do usuário</p>
+            <p class="m-3 fw-bold text-white fs-16" >Olá, {{nome}}</p>
           </li>
           <li class="nav-item pl-3 ">
              <a href="">
@@ -23,7 +23,7 @@
       
         <ul class="navbar-nav ml-auto d-flex align-items-center">
          <li class="nav-item pl-3 ">
-            <a class="m-0 fw-bold text-white fs-16" >Sair<i class="fa fa-sign-out" aria-hidden="true"></i></a>
+            <a (click)='sair()' class="m-0 fw-bold text-white fs-16" >Sair<i class="fa fa-sign-out" aria-hidden="true"></i></a>
          </li>
         </ul>
         
